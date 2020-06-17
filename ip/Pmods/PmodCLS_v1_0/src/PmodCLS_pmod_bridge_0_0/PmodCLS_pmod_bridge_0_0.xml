@@ -331,14 +331,13 @@
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio_rtl" spirit:version="1.0"/>
       <spirit:mirroredMaster/>
-      <spirit:connectionRequired>true</spirit:connectionRequired>
       <spirit:portMaps>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>TRI_I</spirit:name>
+            <spirit:name>TRI_O</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>in_top_bus_I</spirit:name>
+            <spirit:name>in_top_bus_O</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -351,10 +350,10 @@
         </spirit:portMap>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>TRI_O</spirit:name>
+            <spirit:name>TRI_I</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>in_top_bus_O</spirit:name>
+            <spirit:name>in_top_bus_I</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -404,13 +403,14 @@
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio_rtl" spirit:version="1.0"/>
       <spirit:mirroredMaster/>
+      <spirit:connectionRequired>true</spirit:connectionRequired>
       <spirit:portMaps>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>TRI_O</spirit:name>
+            <spirit:name>TRI_I</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>in_top_uart_gpio_bus_O</spirit:name>
+            <spirit:name>in_top_uart_gpio_bus_I</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
         <spirit:portMap>
@@ -423,10 +423,10 @@
         </spirit:portMap>
         <spirit:portMap>
           <spirit:logicalPort>
-            <spirit:name>TRI_I</spirit:name>
+            <spirit:name>TRI_O</spirit:name>
           </spirit:logicalPort>
           <spirit:physicalPort>
-            <spirit:name>in_top_uart_gpio_bus_I</spirit:name>
+            <spirit:name>in_top_uart_gpio_bus_O</spirit:name>
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
@@ -444,6 +444,7 @@
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="spi" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="spi_rtl" spirit:version="1.0"/>
       <spirit:mirroredMaster/>
+      <spirit:connectionRequired>true</spirit:connectionRequired>
       <spirit:portMaps>
         <spirit:portMap>
           <spirit:logicalPort>
@@ -884,11 +885,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 13 03:23:53 UTC 2018</spirit:value>
+            <spirit:value>Mon Jun 08 21:35:17 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:f82c45d2</spirit:value>
+            <spirit:value>9:c1dd6ed4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2187,7 +2188,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>pmod_bridge_v1_0</spirit:description>
+  <spirit:description>pmod_bridge_v1_1</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -2210,16 +2211,112 @@
       <spirit:name>USE_BOARD_FLOW</spirit:name>
       <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.USE_BOARD_FLOW">false</spirit:value>
     </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>USE_PULLUPS</spirit:name>
+      <spirit:displayName>Use Pullups</spirit:displayName>
+      <spirit:value spirit:format="bool" spirit:resolve="user" spirit:id="PARAM_VALUE.USE_PULLUPS">false</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:resolve="generated" xilinx:id="PARAM_ENABLEMENT.USE_PULLUPS">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>Pmod Bridge</xilinx:displayName>
-      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:pmod_concat:1.0_ARCHIVE_LOCATION">C:/Tommywork/PMODOLEDRGB/pmodconcat</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:pmod_concat:1.0_ARCHIVE_LOCATION">C:/Tommywork/PMODOLEDRGB/pmodconcat</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:ip:pmod_concat:1.0_ARCHIVE_LOCATION">C:/Tommywork/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
-        <xilinx:tag xilinx:name="digilentinc.com:ip:pmod_bridge:1.0_ARCHIVE_LOCATION">c:/Digilent-vivLib/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="digilentinc.com:ip:pmod_bridge:1.0_ARCHIVE_LOCATION">d:/Github/Experimental/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ec48dc_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35312b89_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d250a9b_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52105427_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@443e3c1d_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@658cf0aa_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@391bb156_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43053b0c_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1acb94c6_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc2dd2b_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55297389_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2992deea_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64c8b761_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cadc338_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50635cc6_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d32df03_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fac74f9_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a6694cf_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39b3c8e1_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69ed7b22_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@363b822c_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cfa59ba_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c3404da_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ca3cacf_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50ffa120_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ecf2b8c_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31fc9b30_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a9bb4e6_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d16a0fe_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@311c9baf_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49b90a63_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37385906_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@560ecccd_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3916e76b_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@546a3453_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f8f21d4_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37edc50f_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55918cba_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52935330_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54b0d003_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37e13fcc_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@778e689b_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36bbf9d6_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39af2c25_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@714172f7_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f632ea0_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3914da05_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@309ae27d_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27b032ba_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a3203cf_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@163ad07b_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e568796_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@480373ec_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e9065fe_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@606823e4_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b5e095f_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ff6195d_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35cf2cc5_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18ef7c24_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c6b137_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fdfd190_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5791a2c1_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f2ce3d6_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@774fe98b_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25037db7_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@400d2c57_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d4a4be6_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5343259c_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76e75ef7_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@410479c0_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cef85f6_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@153b8390_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57384728_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ec7b4d7_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cf9c1d9_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e131e14_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63c282a9_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f84bbb7_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38625dd7_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@95fe64b_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@550c019c_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32dc4bd0_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@93f351b_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c2940bc_ARCHIVE_LOCATION">d:/Experimental/Hier-IP/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.Bottom_Row_Interface" xilinx:valueSource="user"/>
@@ -2227,12 +2324,12 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="830eaef6"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b6fb5970"/>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d41c2959"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="150d5e2b"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="84f77f42"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="9f3d8178"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="825d43aa"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="dfe3e96c"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>
