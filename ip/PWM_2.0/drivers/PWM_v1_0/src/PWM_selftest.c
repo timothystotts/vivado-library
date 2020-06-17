@@ -32,8 +32,7 @@ XStatus PWM_Reg_SelfTest(void * baseaddr_p)
 {
 	u32 baseaddr;
 	int write_loop_index;
-	int read_loop_index;
-	int Index;
+	u32 read_loop_index;
 
 	baseaddr = (u32) baseaddr_p;
 
