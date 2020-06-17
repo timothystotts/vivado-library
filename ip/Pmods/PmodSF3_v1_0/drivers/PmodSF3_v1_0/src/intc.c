@@ -1,7 +1,6 @@
 #include "intc.h"
 
 XStatus InitInterruptController(INTC* intc) {
-   int Status;
    // Start the interrupt controller
 #ifdef XPAR_INTC_0_DEVICE_ID
    // Initialize the driver instance
@@ -9,6 +8,7 @@ XStatus InitInterruptController(INTC* intc) {
    RETURN_ON_FAILURE(XIntc_Start(intc, XIN_REAL_MODE));
 
 #else
+   int Status;
    XScuGic_Config *GicConfig;
    GicConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
    XScuGic_CfgInitialize(intc, GicConfig, GicConfig->CpuBaseAddress);
