@@ -17,7 +17,7 @@
 /*    ??/??/????(AHolzer):  Created                                           */
 /*    07/26/2017(ArtVVB):   Refactored and Validated                          */
 /*    03/16/2018(atangzwj): Validated for Vivado 2017.4                       */
-/*    06/18/2020(TimS.):    Updated for Vivado and vitis 2020.1, and FreeRTOS */
+/*    06/18/2020(TimS.):    Updated for Vivado and Vitis 2020.1, and FreeRTOS */
 /*                                                                            */
 /******************************************************************************/
 
