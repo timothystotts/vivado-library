@@ -992,7 +992,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ec131a38</spirit:value>
+            <spirit:value>4ba75379</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2182,8 +2182,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>PmodESP32_v1_0</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
-      <xilinx:coreRevision>17</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-06-19T19:56:19Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>19</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-06-08T17:35:54Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:PmodESP32:1.0_ARCHIVE_LOCATION">c:/Users/arthur/documents/github/vivado-library/ip/pmods/PmodESP32_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodESP32:1.0_ARCHIVE_LOCATION">d:/Github/Experimental/vivado-library/ip/Pmods/PmodESP32_v1_0</xilinx:tag>
@@ -2273,10 +2273,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4eb5a413"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed01acfd"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fe9b49dc"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="472cba86"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="e72dda1e"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="d5b54bb1"/>
     </xilinx:packagingInfo>

@@ -847,7 +847,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>13749061</spirit:value>
+            <spirit:value>8187f9b6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2078,8 +2078,8 @@
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>PmodHYGRO_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>26</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-06-19T19:57:03Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>28</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-06-08T17:36:18Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodHYGRO:1.0_ARCHIVE_LOCATION">C:/Tommywork/PmodGeneric/IIC_Template</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodHYGRO:1.0_ARCHIVE_LOCATION">C:/Tommywork/PmodGeneric/IIC_Template</xilinx:tag>
@@ -2115,10 +2115,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="800c978a"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="3fda0bf4"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6bfb3be6"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="86b43b84"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="0fb2b5e4"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="1ebf80ad"/>
     </xilinx:packagingInfo>

@@ -984,7 +984,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>542fd9b1</spirit:value>
+            <spirit:value>9e72102d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2132,8 +2132,8 @@
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>PmodACL2_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>11</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-06-19T19:53:11Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>13</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-06-08T17:34:14Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodACL2:1.0_ARCHIVE_LOCATION">C:/Users/arbrown/Desktop/PmodACL2</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodACL2:1.0_ARCHIVE_LOCATION">C:/Users/arbrown/Desktop/PmodACL2</xilinx:tag>
@@ -2214,10 +2214,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="159fac82"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="4fe4eefd"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3fd7c6a8"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6578f009"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ecf00110"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="83753607"/>
     </xilinx:packagingInfo>
