@@ -6,7 +6,7 @@
 #ifdef XPAR_INTC_0_DEVICE_ID
 #include "xintc.h"
 #else
-#include "xScuGic.h"
+#include "xscugic.h"
 #endif
 
 #ifdef XPAR_INTC_0_DEVICE_ID
