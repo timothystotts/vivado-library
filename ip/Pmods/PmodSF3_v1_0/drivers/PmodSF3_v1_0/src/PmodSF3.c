@@ -16,6 +16,7 @@
 /*    ??/??/????(AHolzer):  Created                                           */
 /*    07/26/2017(ArtVVB):   Refactored and Validated                          */
 /*    03/16/2018(atangzwj): Validated for Vivado 2017.4                       */
+/*    06/18/2020(TimS.):    Updated for Vivado and Vitis 2020.1, and FreeRTOS */
 /*                                                                            */
 /******************************************************************************/
 
@@ -51,7 +52,7 @@ XSpi_Config XSpi_SF3Config = {
 
 /*****************************************************************************
 * This function initializes the SF3 device and attaches and enables it's SPI
-* interrupt
+* interrupt, for Xilinx standalone OS.
 *
 * @param    InstancePtr is a pointer to the instance of the SF3 device.
 * @param    ivt is the interrupt vector table containing the SF3 SPI handler as
@@ -63,6 +64,7 @@ XSpi_Config XSpi_SF3Config = {
 * @note     None
 *
 ******************************************************************************/
+#ifndef _USE_FREERTOS_
 XStatus SF3_begin(PmodSF3 *InstancePtr, INTC *IntcPtr, const ivt_t ivt[],
       u32 SPI_Address) {
    XStatus Status;
@@ -83,6 +85,46 @@ XStatus SF3_begin(PmodSF3 *InstancePtr, INTC *IntcPtr, const ivt_t ivt[],
 
    return XST_SUCCESS;
 }
+#endif
+
+/*****************************************************************************
+* This function initializes the SF3 device and attaches and enables it's SPI
+* interrupt, for Xilinx FreeRTOS OS.
+*
+* @param    InstancePtr is a pointer to the instance of the SF3 device.
+* @param    SPI_Address is the base address of the SF3 SPI device.
+* @param    Intc_Vec_Id is the interrupt vector integer ID for the PmodSF3
+*           QSPI interrupt line from the PmodSF3 IP module to the CPU.
+* @param    Intc_Intr is the interrupt controller index ID for the PmodSF3
+*           QSPI interrupt line from the PmodSF3 IP module to the CPU and is
+*           ignored by this function.
+* @return   XST_SUCCESS if successful else XST_FAILURE.
+*
+* @note     None
+*
+******************************************************************************/
+#ifdef _USE_FREERTOS_
+XStatus SF3_begin_freertos(PmodSF3 *InstancePtr, const u32 SPI_Address,
+	const u32 Intc_Vec_Id, const u32 Intc_Intr) {
+   XStatus Status;
+
+   XSpi_SF3Config.BaseAddress = SPI_Address;
+
+   // Initialize SPI
+   Status = SF3_SpiInit(&InstancePtr->SF3Spi);
+   if (Status != XST_SUCCESS) {
+      xil_printf("\r\nError initializing SPI");
+      return XST_FAILURE;
+   }
+
+   XSpi_IntrGlobalEnable(&InstancePtr->SF3Spi);
+
+   xPortInstallInterruptHandler(Intc_Vec_Id, XSpi_InterruptHandler, &(InstancePtr->SF3Spi));
+   vPortEnableInterrupt(Intc_Vec_Id);
+
+   return XST_SUCCESS;
+}
+#endif
 
 /*****************************************************************************
 * This function initializes the SPI and performs a self test to ensure that the

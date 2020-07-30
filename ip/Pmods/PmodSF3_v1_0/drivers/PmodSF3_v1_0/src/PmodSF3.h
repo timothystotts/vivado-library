@@ -17,6 +17,7 @@
 /*    ??/??/????(AHolzer):  Created                                           */
 /*    07/26/2017(ArtVVB):   Refactored and Validated                          */
 /*    03/16/2018(atangzwj): Validated for Vivado 2017.4                       */
+/*    06/18/2020(TimS.):    Updated for Vivado and Vitis 2020.1, and FreeRTOS */
 /*                                                                            */
 /******************************************************************************/
 
@@ -29,6 +30,12 @@ extern "C" {
 
 /***************************** Include Files *********************************/
 
+#ifdef _USE_FREERTOS_
+/* FreeRTOS includes. */
+#include "FreeRTOS.h"
+#include "task.h"
+#endif
+/* xspi includes. */
 #include "intc.h"
 #include "xspi.h"
 #include "xstatus.h"
@@ -103,8 +110,13 @@ typedef struct PmodSF3 {
 } PmodSF3;
 
 /************************** Function Prototypes ******************************/
+#ifndef _USE_FREERTOS_
 XStatus SF3_begin(PmodSF3 *InstancePtr, INTC *IntcPtr, const ivt_t ivt[],
       u32 SPI_Address);
+#else
+XStatus SF3_begin_freertos(PmodSF3 *InstancePtr,
+	const u32 SPI_Address, const u32 Intc_Vec_Id, const u32 Intc_Intr);
+#endif
 XStatus SF3_SpiInit(XSpi *SpiPtr);
 XStatus SF3_FlashWriteEnable(PmodSF3 *InstancePtr);
 XStatus SF3_FlashWrite(PmodSF3 *InstancePtr, u32 Addr, u32 ByteCount,
