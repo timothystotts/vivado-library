@@ -394,7 +394,7 @@
                   if ( axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS-1:ADDR_LSB] == pwm_i ) 
                      reg_data_out = duty_reg[pwm_i];
             end
-	        default : reg_data_out <= 0;
+	        default : reg_data_out = 0;
 	      endcase
 	end
 
