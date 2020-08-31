@@ -1172,7 +1172,10 @@ u16 OLEDrgb_BuildHSV(u8 hue, u8 sat, u8 val) {
 **      Converts separate RGB values into a 565 RGB value used by the OLEDrgb
 */
 u16 OLEDrgb_BuildRGB(u8 R, u8 G, u8 B) {
-   return ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3);
+//   return ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3);
+   u16 rgb_tmp;
+   rgb_tmp = ((R >> 3) << 11) | ((G >> 2) << 5) | (B >> 3);
+   return (((rgb_tmp >> 8) & 0xff) | ((rgb_tmp & 0xff) << 8));
 }
 
 /* ------------------------------------------------------------ */
