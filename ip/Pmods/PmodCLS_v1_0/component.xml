@@ -596,7 +596,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b7b8d9b1</spirit:value>
+            <spirit:value>985f89c4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -618,7 +618,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4520f61c</spirit:value>
+            <spirit:value>b8bcfc78</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -632,7 +632,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8c1a6303</spirit:value>
+            <spirit:value>10750247</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -646,7 +646,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2f31f43d</spirit:value>
+            <spirit:value>fe357a16</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -666,7 +666,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>142ef21f</spirit:value>
+            <spirit:value>1b4224ac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1310,7 +1310,7 @@
       <spirit:file>
         <spirit:name>src/PmodCLS.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_8936b8a1</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_5aff9265</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1381,7 +1381,7 @@
       <spirit:file>
         <spirit:name>xgui/PmodCLS_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_8c1a6303</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_10750247</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1532,8 +1532,8 @@
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>PmodCLS_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>14</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-11-27T18:13:34Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>18</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-11-28T02:17:16Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="digilentinc.com:IP:PmodCLS:1.0_ARCHIVE_LOCATION">d:/Github/Experimental/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2a6aa8f2_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
@@ -1600,6 +1600,38 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@62c6d101_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@a104a26_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5a292f90_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3423d068_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ad74d43_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75c734b7_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@412f0c73_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29d50da1_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70684998_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@838c151_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a4f75d0_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d262c5_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@334a925e_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37060b08_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39105a07_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66030f8d_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62b32b4a_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30bc0bff_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@203a4e4c_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28da929b_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f82e35c_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@389a0f2a_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c164977_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58acd6dd_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5104388a_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62d656f0_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c799c80_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35b9a70c_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370dc48b_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b1a9811_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42c94065_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b721886_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1870cb3_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a5716d7_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b1c3944_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-1/SF-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_LITE_SPI.ADDR_WIDTH" xilinx:valueSource="user"/>
@@ -1631,7 +1663,7 @@
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="bce158ce"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="30f53302"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="16b40317"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f4266ab7"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="d269a9b4"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="57ecf830"/>
     </xilinx:packagingInfo>
