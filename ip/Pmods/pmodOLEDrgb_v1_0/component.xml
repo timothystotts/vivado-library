@@ -375,7 +375,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.AXI_LITE_GPIO_RST.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.AXI_LITE_GPIO_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -423,7 +423,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.AXI_LITE_SPI_RST.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.AXI_LITE_SPI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -752,7 +752,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e6465ec7</spirit:value>
+            <spirit:value>d96b25c5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -783,7 +783,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e6465ec7</spirit:value>
+            <spirit:value>d96b25c5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -797,7 +797,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>76c2774b</spirit:value>
+            <spirit:value>0d4cc4b5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -811,7 +811,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2649a50e</spirit:value>
+            <spirit:value>8f2086f2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -834,7 +834,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3aa71ea2</spirit:value>
+            <spirit:value>29a91764</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1217,289 +1217,6 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>axi_lite_gpio_awaddr</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_ADDR_WIDTH&apos;)) - 1)">8</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_awprot</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">2</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_awvalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_awready</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_wdata</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_wstrb</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_wvalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_wready</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_bresp</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">1</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_bvalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_bready</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_araddr</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_ADDR_WIDTH&apos;)) - 1)">8</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_arprot</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">2</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_arvalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_arready</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_rdata</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_rresp</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">1</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_rvalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>axi_lite_gpio_rready</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
         <spirit:name>axi_lite_spi_awaddr</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
@@ -1782,6 +1499,289 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_ADDR_WIDTH&apos;)) - 1)">8</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_ADDR_WIDTH&apos;)) - 1)">8</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_LITE_GPIO_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>axi_lite_gpio_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
@@ -1816,7 +1816,7 @@
       <spirit:enumeration>32</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_74b5137e</spirit:name>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
       <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
       <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
@@ -1836,19 +1836,22 @@
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0/PmodOLEDrgb_axi_quad_spi_0_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_gpio_0/PmodOLEDrgb_axi_gpio_0_1</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0/PmodOLEDrgb_pmod_bridge_0_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/PmodOLEDrgb_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5259c2e5</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_54c40a05</spirit:userFileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1907,14 +1910,17 @@
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0/PmodOLEDrgb_axi_quad_spi_0_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_gpio_0/PmodOLEDrgb_axi_gpio_0_1</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0/PmodOLEDrgb_pmod_bridge_0_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/PmodOLEDrgb_v1_0.v</spirit:name>
@@ -2049,7 +2055,7 @@
       <spirit:file>
         <spirit:name>xgui/PmodOLEDrgb_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_10ca09e0</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_8f2086f2</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2064,14 +2070,17 @@
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0/PmodOLEDrgb_axi_quad_spi_0_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_gpio_0/PmodOLEDrgb_axi_gpio_0_1</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0/PmodOLEDrgb_pmod_bridge_0_0</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2220,8 +2229,13 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>PmodOLEDrgb_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>54</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-08-31T21:35:16Z</xilinx:coreCreationDateTime>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>59</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-12-04T21:12:00Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodOLEDrgb:1.0_ARCHIVE_LOCATION">C:/Tommywork/PMODOLEDRGB/ip_repo/PmodOLEDrgb_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodOLEDrgb:1.0_ARCHIVE_LOCATION">C:/Tommywork/PMODOLEDRGB/ip_repo/PmodOLEDrgb_1.0</xilinx:tag>
@@ -2397,14 +2411,132 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1753537a_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@a06ab34_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1f9ee95d_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a814b5e_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61fba34f_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b41e0f5_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c432308_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1aba929b_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@433e20e0_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62496adf_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2583d9c0_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@394c8426_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d118890_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b9e3497_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11884203_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29de0541_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd4211c_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a55e92f_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53a8f897_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d9fabaf_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21637136_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@738fda99_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40835564_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7959131d_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50898255_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5eac9a_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ac70eae_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c0486ef_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c7c9223_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dce118f_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bccd263_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5eb432aa_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@363cf856_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@299c6e3e_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ecf5386_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4495ea2_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32485ae3_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@494b7d07_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a5cdae_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cc54202_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5957fa14_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ab54565_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fa24666_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bbc3ba1_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7af754ce_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@290e7703_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d5c4c33_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@360b594f_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f1155e1_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66beffa5_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@639f9dc3_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a11ffaf_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17e19f68_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f9c4626_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17a5d3b0_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c39ef2c_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bce9bd_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31a7256b_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cde6b29_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27ee9130_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72e76e36_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ff369dd_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e38032b_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39da58c2_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@728f24fe_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5399153b_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34303703_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c991a85_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aeddf94_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aa23476_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2179ca1e_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71a6327b_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ae4db72_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dfd5534_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4355ad9_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19811921_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@546767c4_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33bbcb2e_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66c6998a_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10678791_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4499a6d7_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73b4808e_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@796c55d8_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d89c7fe_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5270ec1a_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cc75d90_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@749cfa1d_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33895347_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75a3302_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a260347_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ab9a3f_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e7823d4_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@485c1d4a_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e1bd0a2_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a365093_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e3f5b44_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aeea8de_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@296a9497_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@403927b3_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f57e266_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@777cb05c_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c3cc128_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2a4e83_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6118c38b_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@553b7be5_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35f07f8d_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31de8eb9_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77268e14_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@90a4b9c_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@719bd137_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4322602e_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77ba918a_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b72fbe_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7222a9a3_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ea6fdaa_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@452a96d0_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7765e37d_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b90919e_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5445903d_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1971cb8b_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5006ffad_ARCHIVE_LOCATION">w:/wa/fpga-colors-tester-1/Color-Tester-Design-AXI/IP/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="cf9a85f5"/>
+      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="fae14cda"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="5a63cb54"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b7d46c9e"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="bd31e5f0"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0e0b686a"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="6b8f56e8"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="73ea2864"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="49bf0d42"/>
     </xilinx:packagingInfo>
