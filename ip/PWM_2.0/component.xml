@@ -296,7 +296,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>62f2a839</spirit:value>
+            <spirit:value>e6ae736a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -338,32 +338,6 @@
             <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.NUM_PWM&apos;)) - 1)">0</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>pwm_axi_aclk</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>pwm_axi_aresetn</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>wire</spirit:typeName>
@@ -656,6 +630,32 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>pwm_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>pwm_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
@@ -764,7 +764,7 @@
       <spirit:file>
         <spirit:name>xgui/PWM_v2_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_869a1324</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_30df93a9</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -871,12 +871,12 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>PWM_v2.0</xilinx:displayName>
-      <xilinx:coreRevision>15</xilinx:coreRevision>
+      <xilinx:coreRevision>11</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>natinst.com:user:PWM:1.0</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>digilentinc.com:IP:PWM:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2020-07-30T17:30:42Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-07-31T19:21:08Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PWM:1.0_ARCHIVE_LOCATION">C:/Tommywork/Vivado/15_4/PWM_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PWM:1.0_ARCHIVE_LOCATION">C:/Tommywork/Vivado/15_4/PWM_1.0</xilinx:tag>
@@ -906,45 +906,31 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@323da7ca_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/PWM_2.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1441dd53_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/PWM_2.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@55cf34f8_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2971a9a3_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@48012292_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cc2876b_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@608323d1_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5715552e_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@be2ac2a_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d08b940_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f6dc314_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@77479c29_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e8faa55_ARCHIVE_LOCATION">w:/wa/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@38e5ab61_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@ec7d2c4_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@15a63fb5_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@40d4535e_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2599997b_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e2a8c01_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b30b9a3_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@40ad1282_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@69b2ad77_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@389b49ab_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ad61cca_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a5a0c75_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@49fc1c25_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@744e5eb1_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e789c75_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e7a79ed_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f36de6_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@64a03759_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3036722_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c2b5d5f_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@37192725_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44bae2b7_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@751ce1ac_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b3a9d93_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10a2266c_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b444400_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@103cd249_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14615bd7_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@716490d2_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e1f0b2f_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ed41aee_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@493cfc8c_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5185d26_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ad5fc93_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24efc032_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c17cb1_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e50118_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a6d27f7_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-2/ACL-Tester-Design-Zynq/IP/vivado-library/ip/PWM_2.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="623fba94"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="505458f9"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="57fb471c"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="518f7c3d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="bba7374b"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="8af61551"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="1e87c6fc"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="79006e30"/>
     </xilinx:packagingInfo>
