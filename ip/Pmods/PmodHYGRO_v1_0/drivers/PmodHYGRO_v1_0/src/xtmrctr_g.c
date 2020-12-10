@@ -6,30 +6,30 @@
 /*****************************************************************************/
 /**
 *
-* @file xtmrctr_l.c
+* @file xtmrctr_g.c
 * @addtogroup tmrctr_v4_7
 * @{
 *
-* This file contains low-level driver functions that can be used to access the
-* device.  The user should refer to the hardware device specification for more
-* details of the device operation.
+* This file contains a configuration table that specifies the configuration of
+* timer/counter devices in the system. Each timer/counter device should have
+* an entry in this table.
 *
 * <pre>
 * MODIFICATION HISTORY:
 *
 * Ver   Who  Date     Changes
 * ----- ---- -------- -----------------------------------------------
-* 1.00b jhl  04/24/02 First release
+* 1.00a ecm  08/16/01 First release
+* 1.00b jhl  02/21/02 Repartitioned the driver for smaller files
 * 1.10b mta  03/21/07 Updated to new coding style
-* 2.00a ktn  10/30/09 Updated to use HAL API's
 * </pre>
 *
 ******************************************************************************/
 
-
 /***************************** Include Files *********************************/
 
-#include "xtmrctr_l.h"
+#include "xtmrctr.h"
+#include "xparameters.h"
 
 /************************** Constant Definitions *****************************/
 
@@ -43,11 +43,19 @@
 /************************** Function Prototypes ******************************/
 
 
-/************************** Variable Definitions *****************************/
+/************************** Variable Prototypes ******************************/
 
-/* The following table contains the offset from the base address of a timer
- * counter device for each timer counter.  A single device may contain multiple
- * timer counters and the functions specify which one to operate on.
+/**
+ * The timer/counter configuration table, sized by the number of instances
+ * defined in xparameters.h.
  */
-u8 XTmrCtr_Offsets[] = { 0, XTC_TIMER_COUNTER_OFFSET };
+XTmrCtr_Config XTmrCtr_ConfigTable[] = {
+#if defined(XPAR_XTMRCTR_NUM_INSTANCES) && (XPAR_XTMRCTR_NUM_INSTANCES > 0)
+	{
+		XPAR_TMRCTR_0_DEVICE_ID,
+		XPAR_TMRCTR_0_BASEADDR,
+		XPAR_TMRCTR_0_CLOCK_FREQ_HZ,
+	}
+#endif
+};
 /** @} */
