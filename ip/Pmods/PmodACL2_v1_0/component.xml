@@ -769,7 +769,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>SENSITIVITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.INTR.GPIO_INTERRUPT.SENSITIVITY" spirit:choiceRef="choice_list_9ca20931">LEVEL_HIGH</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.INTR.GPIO_INTERRUPT.SENSITIVITY" spirit:choiceRef="choice_list_99a1d2b9">LEVEL_HIGH</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -817,7 +817,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.S_AXI_ARESETN.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.RST.S_AXI_ARESETN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -931,7 +931,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ddee4a24</spirit:value>
+            <spirit:value>78331232</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -956,7 +956,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>bfcea7ce</spirit:value>
+            <spirit:value>244ae99e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -970,7 +970,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>703bfe95</spirit:value>
+            <spirit:value>9a527436</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -984,7 +984,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>33afa049</spirit:value>
+            <spirit:value>ffc6985d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1007,7 +1007,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9da5b7f3</spirit:value>
+            <spirit:value>cddf0a7c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1879,11 +1879,6 @@
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_74b5137e</spirit:name>
-      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
-      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
       <spirit:name>choice_list_99a1d2b9</spirit:name>
       <spirit:enumeration>LEVEL_HIGH</spirit:enumeration>
       <spirit:enumeration>LEVEL_LOW</spirit:enumeration>
@@ -1891,11 +1886,9 @@
       <spirit:enumeration>EDGE_FALLING</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_9ca20931</spirit:name>
-      <spirit:enumeration>LEVEL_HIGH</spirit:enumeration>
-      <spirit:enumeration>LEVEL_LOW</spirit:enumeration>
-      <spirit:enumeration>EDGE_RISING</spirit:enumeration>
-      <spirit:enumeration>EDGE_FALLING</spirit:enumeration>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_ac75ef1e</spirit:name>
@@ -1906,24 +1899,6 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/PmodACL2_pmod_bridge_0_0/PmodACL2_pmod_bridge_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_pmod_bridge_0/PmodACL2_pmod_bridge_0_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/PmodACL2_axi_gpio_0_0/PmodACL2_axi_gpio_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_axi_gpio_0/PmodACL2_axi_gpio_0_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/PmodACL2_axi_quad_spi_0_0/PmodACL2_axi_quad_spi_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_axi_quad_spi_0/PmodACL2_axi_quad_spi_0_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/PmodACL2_ooc.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
@@ -1931,9 +1906,27 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>src/PmodACL2_pmod_bridge_0_0/PmodACL2_pmod_bridge_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/PmodACL2_axi_quad_spi_0_0/PmodACL2_axi_quad_spi_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/PmodACL2_axi_gpio_0_0/PmodACL2_axi_gpio_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_gpio_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>src/PmodACL2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_eca4ef8a</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_b1ae8fe9</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1974,25 +1967,24 @@
         <spirit:name>src/PmodACL2_pmod_bridge_0_0/PmodACL2_pmod_bridge_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_pmod_bridge_0/PmodACL2_pmod_bridge_0_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/PmodACL2_axi_gpio_0_0/PmodACL2_axi_gpio_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_axi_gpio_0/PmodACL2_axi_gpio_0_0</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/PmodACL2_axi_quad_spi_0_0/PmodACL2_axi_quad_spi_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_axi_quad_spi_0/PmodACL2_axi_quad_spi_0_0</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/PmodACL2_axi_gpio_0_0/PmodACL2_axi_gpio_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_gpio_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/PmodACL2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2030,7 +2022,7 @@
       <spirit:file>
         <spirit:name>xgui/PmodACL2_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_703bfe95</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_9a527436</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2100,17 +2092,20 @@
       <spirit:file>
         <spirit:name>src/PmodACL2_pmod_bridge_0_0/PmodACL2_pmod_bridge_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_pmod_bridge_0/PmodACL2_pmod_bridge_0_0</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/PmodACL2_axi_quad_spi_0_0/PmodACL2_axi_quad_spi_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_axi_quad_spi_0/PmodACL2_axi_quad_spi_0_0</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/PmodACL2_axi_gpio_0_0/PmodACL2_axi_gpio_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_axi_gpio_0/PmodACL2_axi_gpio_0_0</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_gpio_0</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2204,12 +2199,11 @@
       </xilinx:taxonomies>
       <xilinx:displayName>PmodACL2_v1_0</xilinx:displayName>
       <xilinx:xpmLibraries>
-        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>13</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-12-06T02:17:29Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>14</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-11-07T20:11:53Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodACL2:1.0_ARCHIVE_LOCATION">C:/Users/arbrown/Desktop/PmodACL2</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodACL2:1.0_ARCHIVE_LOCATION">C:/Users/arbrown/Desktop/PmodACL2</xilinx:tag>
@@ -2273,6 +2267,29 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@ca13195_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@284af4c5_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7b07fd00_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@48062952_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@693d5c3f_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@b828e35_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@92460a9_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@259427d0_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@19167487_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23272ba4_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@23bfb4b3_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11c011bb_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@610083ca_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11850564_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@42a67aeb_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7682bc1b_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@18c428b8_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@98316c9_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@127442ac_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@434d7796_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@454cc10c_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6279e008_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5fbcbe00_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@155a1504_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@57745e6e_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34801eb8_ARCHIVE_LOCATION">g:/wa/fpga-serial-acl-tester-1/ACL-Tester-Design-AXI/IP/vivado-library/ip/Pmods/PmodACL2_v1_0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_LITE_GPIO.ADDR_WIDTH" xilinx:valueSource="user"/>
@@ -2325,10 +2342,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9c777dd6"/>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="fa19bc16"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="4fe4eefd"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9eac3e79"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f1bd799c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ecf00110"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="83753607"/>
     </xilinx:packagingInfo>
