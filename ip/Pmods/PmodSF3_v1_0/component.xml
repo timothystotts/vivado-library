@@ -640,7 +640,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>987b7393</spirit:value>
+            <spirit:value>4fbcb35d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -662,7 +662,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4a2d7f7e</spirit:value>
+            <spirit:value>603c78c5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -690,7 +690,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>67c1726a</spirit:value>
+            <spirit:value>1a0dccfc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -710,7 +710,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>142ef21f</spirit:value>
+            <spirit:value>8a4fcfcf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1353,26 +1353,6 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/PmodSF3_axi_quad_spi_0_0/PmodSF3_axi_quad_spi_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_axi_quad_spi_0/PmodSF3_axi_quad_spi_0_0</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/PmodSF3_pmod_bridge_0_0/PmodSF3_pmod_bridge_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_pmod_bridge_0/PmodSF3_pmod_bridge_0_0</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/PmodSF3_ooc.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
@@ -1384,10 +1364,20 @@
         </spirit:define>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/PmodSF3.hwdef</spirit:name>
-        <spirit:userFileType>hwdef</spirit:userFileType>
+        <spirit:name>src/PmodSF3_pmod_bridge_0_0/PmodSF3_pmod_bridge_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0</spirit:userFileType>
+        <spirit:define>
+          <spirit:name>processing_order</spirit:name>
+          <spirit:value>early</spirit:value>
+        </spirit:define>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/PmodSF3_axi_quad_spi_0_0/PmodSF3_axi_quad_spi_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0</spirit:userFileType>
         <spirit:define>
           <spirit:name>processing_order</spirit:name>
           <spirit:value>early</spirit:value>
@@ -1428,50 +1418,28 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/PmodSF3_axi_quad_spi_0_0/PmodSF3_axi_quad_spi_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_axi_quad_spi_0/PmodSF3_axi_quad_spi_0_0</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/PmodSF3_pmod_bridge_0_0/PmodSF3_pmod_bridge_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_pmod_bridge_0/PmodSF3_pmod_bridge_0_0</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/PmodSF3.hwdef</spirit:name>
-        <spirit:userFileType>hwdef</spirit:userFileType>
+        <spirit:name>src/PmodSF3_axi_quad_spi_0_0/PmodSF3_axi_quad_spi_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/PmodSF3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_axi_quad_spi_3_2__ref_view_fileset</spirit:name>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_quad_spi" xilinx:version="3.2">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_quad_spi" xilinx:version="3.2">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -1567,6 +1535,18 @@
         <spirit:userFileType>USED_IN_board</spirit:userFileType>
         <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
       </spirit:file>
+      <spirit:file>
+        <spirit:name>src/PmodSF3_pmod_bridge_0_0/PmodSF3_pmod_bridge_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_pmod_bridge_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/PmodSF3_axi_quad_spi_0_0/PmodSF3_axi_quad_spi_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_quad_spi_0</spirit:userFileType>
+      </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_implementation_xilinx_com_ip_axi_quad_spi_3_2__ref_view_fileset</spirit:name>
@@ -1643,8 +1623,12 @@
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>PmodSF3_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>27</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-12-03T19:10:14Z</xilinx:coreCreationDateTime>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>31</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-07-20T14:03:34Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodSF3:1.0_ARCHIVE_LOCATION">C:/Users/aholzer.NI/Documents/PmodSF3</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodSF3:1.0_ARCHIVE_LOCATION">C:/Users/aholzer.NI/Documents/PmodSF3</xilinx:tag>
@@ -1822,6 +1806,34 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@203383a0_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3a54a6a8_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@270a8d93_ARCHIVE_LOCATION">/home/timothystotts/Workareas/GitHub/timothystotts/fpga-serial-mem-tester-2/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54d3de1_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@167ff589_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1783bef4_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43c89864_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2e5c29ed_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9d17864_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d759f72_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5856a85b_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1165b280_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40ac9349_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@73bd307a_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bb88438_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a03babc_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@465e7f1e_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@662dde6a_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51c2d178_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d2097cf_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@ba11303_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1db763c9_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@130e35d_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e2bb01_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2a13e65f_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7190f94e_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3bbf4d07_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@175102bb_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@68601f_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1b456789_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@125317a0_ARCHIVE_LOCATION">/home/timothystotts/wa/fpga-serial-mem-tester-3/SF-Tester-Design-Zynq/IP/vivado-library/ip/Pmods/PmodSF3_v1_0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI_LITE.ADDR_WIDTH" xilinx:valueSource="user"/>
@@ -1851,10 +1863,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c850ade0"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="e1e3e334"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9c74a6ed"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b98b1705"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6b99e6ef"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4ed3cabd"/>
     </xilinx:packagingInfo>
