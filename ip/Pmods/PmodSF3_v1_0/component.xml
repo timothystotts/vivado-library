@@ -640,7 +640,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4fbcb35d</spirit:value>
+            <spirit:value>9e3886b4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -662,7 +662,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>603c78c5</spirit:value>
+            <spirit:value>7d637f44</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -690,7 +690,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1a0dccfc</spirit:value>
+            <spirit:value>8846a6d7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -710,7 +710,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8a4fcfcf</spirit:value>
+            <spirit:value>bb1b97f1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1368,20 +1368,12 @@
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_pmod_bridge_0</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/PmodSF3_axi_quad_spi_0_0/PmodSF3_axi_quad_spi_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_axi_quad_spi_0</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/PmodSF3.v</spirit:name>
@@ -1389,10 +1381,6 @@
         <spirit:userFileType>CHECKSUM_110c0efa</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:define>
-          <spirit:name>processing_order</spirit:name>
-          <spirit:value>early</spirit:value>
-        </spirit:define>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1627,8 +1615,8 @@
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>31</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-07-20T14:03:34Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>32</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-11-24T21:40:01Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodSF3:1.0_ARCHIVE_LOCATION">C:/Users/aholzer.NI/Documents/PmodSF3</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodSF3:1.0_ARCHIVE_LOCATION">C:/Users/aholzer.NI/Documents/PmodSF3</xilinx:tag>
@@ -1863,10 +1851,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c850ade0"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="e1e3e334"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b98b1705"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1b5051e8"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6b99e6ef"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4ed3cabd"/>
     </xilinx:packagingInfo>

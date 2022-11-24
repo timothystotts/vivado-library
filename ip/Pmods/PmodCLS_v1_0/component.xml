@@ -596,7 +596,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>74f4f431</spirit:value>
+            <spirit:value>f688c211</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -618,7 +618,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ff1d60dd</spirit:value>
+            <spirit:value>c1e67832</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -632,7 +632,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>10750247</spirit:value>
+            <spirit:value>8c1a6303</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -646,7 +646,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>de670e56</spirit:value>
+            <spirit:value>d60fa33c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -666,7 +666,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>63a07368</spirit:value>
+            <spirit:value>b31b5371</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1310,7 +1310,7 @@
       <spirit:file>
         <spirit:name>src/PmodCLS.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5aff9265</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_8936b8a1</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1353,6 +1353,7 @@
         <spirit:name>src/PmodCLS.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1539,8 +1540,8 @@
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>24</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-11-19T17:04:45Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>25</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-11-24T21:41:47Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="digilentinc.com:IP:PmodCLS:1.0_ARCHIVE_LOCATION">d:/Github/Experimental/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2a6aa8f2_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/PmodCLS_v1_0</xilinx:tag>
@@ -1718,10 +1719,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="bce158ce"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="30f53302"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="06ebd647"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c130b641"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="d269a9b4"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="57ecf830"/>
     </xilinx:packagingInfo>
