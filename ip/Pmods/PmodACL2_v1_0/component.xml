@@ -931,7 +931,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>78331232</spirit:value>
+            <spirit:value>558d3fe5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -956,7 +956,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>244ae99e</spirit:value>
+            <spirit:value>1921bd1a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -970,7 +970,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9a527436</spirit:value>
+            <spirit:value>703bfe95</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -984,7 +984,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ffc6985d</spirit:value>
+            <spirit:value>d13b894e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1007,7 +1007,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>cddf0a7c</spirit:value>
+            <spirit:value>a8dbba64</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1926,7 +1926,7 @@
       <spirit:file>
         <spirit:name>src/PmodACL2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_b1ae8fe9</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_eca4ef8a</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2202,8 +2202,8 @@
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>14</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-11-07T20:11:53Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>15</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-05-19T00:36:41Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodACL2:1.0_ARCHIVE_LOCATION">C:/Users/arbrown/Desktop/PmodACL2</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodACL2:1.0_ARCHIVE_LOCATION">C:/Users/arbrown/Desktop/PmodACL2</xilinx:tag>
@@ -2342,10 +2342,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2023.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="fa19bc16"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="4fe4eefd"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f1bd799c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="9043e763"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ecf00110"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="83753607"/>
     </xilinx:packagingInfo>
