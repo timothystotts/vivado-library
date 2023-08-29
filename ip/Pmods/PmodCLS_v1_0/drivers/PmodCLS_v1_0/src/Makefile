@@ -19,23 +19,21 @@ INCLUDEFILES:=*.h
 
 OBJECTS =	$(addsuffix .o, $(basename $(wildcard *.c)))
 
-IPNAME=PmodCLS
-
-libs: banner ${IPNAME}_libs clean
+libs: banner xintc_libs clean
 
 %.o: %.c
 	${COMPILER} $(CC_FLAGS) $(ECC_FLAGS) $(INCLUDES) -o $@ $<
 
 banner:
-	echo "Compiling ${IPNAME}"
+	echo "Compiling PmodCLS"
 
-${IPNAME}_libs: ${OBJECTS}
+xintc_libs: ${OBJECTS}
 	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OBJECTS}
 
 .PHONY: include
-include: ${IPNAME}_includes
+include: PmodCLS_includes
 
-${IPNAME}_includes:
+PmodCLS_includes:
 	${CP} ${INCLUDEFILES} ${INCLUDEDIR}
 
 clean:
