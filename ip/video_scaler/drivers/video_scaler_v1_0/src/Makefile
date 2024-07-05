@@ -18,7 +18,7 @@ INCLUDES=-I./. -I${INCLUDEDIR}
 
 INCLUDEFILES=*.h
 LIBSOURCES=*.c
-OUTS = *.o 
+OUTS = $(addsuffix .o, $(basename $(wildcard *.c)))
 
 
 libs:

@@ -3362,8 +3362,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>PmodDHB1_v1_0</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
-      <xilinx:coreRevision>20</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-06-19T19:55:47Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>22</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-06-08T17:35:37Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="natinst.com:user:PmodDHB1:1.0_ARCHIVE_LOCATION">c:/Users/user/Desktop/vivLib/ip/Pmods/PmodDHB1_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:user:PmodDHB1:1.0_ARCHIVE_LOCATION">c:/Users/user/Desktop/vivLib/ip/Pmods/PmodDHB1_v1_0</xilinx:tag>
@@ -3481,7 +3481,7 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="b9117271"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="28934462"/>
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8b02288b"/>

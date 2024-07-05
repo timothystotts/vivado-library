@@ -1923,13 +1923,14 @@ int NAV_ReadPressure(PmodNAV *InstancePtr) {
 **
 */
 void NAV_ReadPressurehPa(PmodNAV *InstancePtr) {
-   u32 dataRawFull;
+   int dataRawFull;
    dataRawFull = NAV_ReadPressure(InstancePtr);
    // Check if there is a negative value
    if (dataRawFull & 0x00800000) {
       dataRawFull |= 0xFF000000;
    }
-   InstancePtr->hPa = (int) (dataRawFull / 4096);
+
+   InstancePtr->hPa = ((float)dataRawFull / 4096.0);
 }
 
 /* ------------------------------------------------------------ */

@@ -89,6 +89,12 @@
           </spirit:physicalPort>
         </spirit:portMap>
       </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.REFCLK.FREQ_HZ">200000000</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
       <spirit:name>SyncRst</spirit:name>
@@ -423,7 +429,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ed2947a7</spirit:value>
+            <spirit:value>10382a00</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -441,7 +447,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a98033c9</spirit:value>
+            <spirit:value>961beada</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -888,22 +894,20 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/SyncBase.vhd</spirit:name>
+        <spirit:name>src/ila_pixclk/ila_pixclk.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/ila_refclk/ila_refclk.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/DVI_Constants.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/EEPROM_8b.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/TWI_SlaveCtl.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/GlitchFilter.vhd</spirit:name>
+        <spirit:name>src/ChannelBond.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -913,17 +917,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/DVI_Constants.vhd</spirit:name>
+        <spirit:name>src/GlitchFilter.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/SyncAsyncReset.vhd</spirit:name>
+        <spirit:name>src/TWI_SlaveCtl.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/PhaseAlign.vhd</spirit:name>
+        <spirit:name>src/EEPROM_8b.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -933,15 +937,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/ila_refclk/ila_refclk.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/ila_pixclk/ila_pixclk.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/ChannelBond.vhd</spirit:name>
+        <spirit:name>src/PhaseAlign.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -951,12 +947,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/TMDS_Decoder.vhd</spirit:name>
+        <spirit:name>src/SyncAsyncReset.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/SyncBase.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/TMDS_Clocking.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/TMDS_Decoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1008,22 +1014,20 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/SyncBase.vhd</spirit:name>
+        <spirit:name>src/ila_pixclk/ila_pixclk.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/ila_refclk/ila_refclk.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/DVI_Constants.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/EEPROM_8b.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/TWI_SlaveCtl.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/GlitchFilter.vhd</spirit:name>
+        <spirit:name>src/ChannelBond.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1033,12 +1037,52 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/DVI_Constants.vhd</spirit:name>
+        <spirit:name>src/GlitchFilter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/TWI_SlaveCtl.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/EEPROM_8b.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/InputSERDES.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/PhaseAlign.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/ResyncToBUFG.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/SyncAsyncReset.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/SyncBase.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/TMDS_Clocking.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/TMDS_Decoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1051,46 +1095,8 @@
         <spirit:userFileType>data</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/ila_refclk/ila_refclk.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/ila_pixclk/ila_pixclk.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/dgl_720p_cea.data</spirit:name>
         <spirit:userFileType>data</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/ResyncToBUFG.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/PhaseAlign.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/InputSERDES.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/ChannelBond.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/TMDS_Decoder.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/TMDS_Clocking.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/dvi2rgb.vhd</spirit:name>
@@ -1181,7 +1187,7 @@
       <xilinx:displayName>DVI to RGB Video Decoder (Sink)</xilinx:displayName>
       <xilinx:vendorDisplayName>Digilent, Inc.</xilinx:vendorDisplayName>
       <xilinx:vendorURL>http://www.digilentinc.com</xilinx:vendorURL>
-      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>digilentinc.com:ip:dvi2rgb:1.3</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>digilentinc.com:ip:dvi2rgb:1.4</xilinx:canUpgradeFrom>
@@ -1191,7 +1197,7 @@
         <xilinx:canUpgradeFrom>digilentinc.com:ip:dvi2rgb:1.8</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>digilentinc.com:ip:dvi2rgb:1.9</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2020-05-04T10:13:41Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-07-21T23:05:34Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="digilentinc.com:ip:dvi2rgb:1.6_ARCHIVE_LOCATION">c:/git/xcam/common-repo/vivado-library/ip/dvi2rgb_v1_7</xilinx:tag>
         <xilinx:tag xilinx:name="digilentinc.com:ip:dvi2rgb:1.7_ARCHIVE_LOCATION">c:/git/vivado-library/ip/dvi2rgb_v1_7</xilinx:tag>
@@ -1213,12 +1219,37 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3b5bbd2b_ARCHIVE_LOCATION">c:/git/vivado-library/ip/dvi2rgb</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@318abccb_ARCHIVE_LOCATION">c:/git/vivado-library/ip/dvi2rgb</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3c2c15bd_ARCHIVE_LOCATION">c:/git/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58a8ef8a_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@560bd7cb_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ff708cd_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60b72622_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75fb59a8_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eed06e9_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fdaa830_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ce67517_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6788c7dc_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18ac0a1c_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3961587_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fcc2bcb_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ef0306_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d16760b_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27a987b4_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bdf6e2c_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f7bf4dc_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ef120e7_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48eb006d_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79412851_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dc304cd_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@719e9fa6_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40e5d90d_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@319b4589_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72a3076d_ARCHIVE_LOCATION">d:/Github/Contractor/Zybo-Z7-10-HDMI/Zybo-Z7-10-HDMI/hw/repo/vivado-library/ip/dvi2rgb</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.1.3</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="2343718e"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="02e55c9b"/>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d57e0cf6"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="52b194ab"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="36dbc747"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="182330bd"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="75f83466"/>

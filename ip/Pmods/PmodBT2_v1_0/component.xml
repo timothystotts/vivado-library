@@ -940,7 +940,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>68b2dee4</spirit:value>
+            <spirit:value>bb93dc8b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2085,8 +2085,8 @@
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>PmodBT2_v1_0</xilinx:displayName>
-      <xilinx:coreRevision>12</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-06-19T19:54:40Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>14</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-06-08T17:35:01Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="digilentinc.com:IP:PmodBT2:1.0_ARCHIVE_LOCATION">d:/Github/Experimental/vivado-library/ip/Pmods/PmodBT2_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6b387f6c_ARCHIVE_LOCATION">d:/Github/vivado-library/ip/Pmods/PmodBT2_v1_0</xilinx:tag>
@@ -2165,10 +2165,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="5603042e"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="f527a1b0"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ac1ef673"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e8023d5a"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="86efd216"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="3fcc071a"/>
     </xilinx:packagingInfo>

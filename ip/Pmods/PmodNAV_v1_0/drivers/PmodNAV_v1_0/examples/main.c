@@ -155,7 +155,7 @@ void NavDemo_Run(void) {
 
    printf("Pmod Nav Demo Started\n\r");
    NAV_ReadPressurehPa(&nav);
-   alt = NavDemo_ConvFeetToMeters(2352); // altitude for Pullman, WA in meters
+   alt = NavDemo_ConvFeetToMeters(175.0); // altitude for Seattle, WA in meters
    Pref = NavDemo_ComputePref(nav.hPa, alt);
    usleep(100000);
    while(1){
@@ -217,7 +217,7 @@ void NavDemo_Run(void) {
       // Get appropriate compass string - North is centered on 0 degrees
       printf("    Heading in Degrees: %.2f   Y Direction: %s\n\r", magXYd, str);
 
-      printf("Pressure: %f\n\r", nav.hPa);
+      printf("Pressure: %.1f hPa\n\r", nav.hPa);
       alt = NavDemo_ConvPresToAltF(Pref, nav.hPa);
       printf("Altitude: %.1f feet\n\r", alt);
 
@@ -277,7 +277,8 @@ void NavDemo_Cleanup(void) {
 float NavDemo_ComputePref(float hPa, float altitudeMeters) {
    float altitudeFeet = NavDemo_ConvMetersToFeet(altitudeMeters);
    float temp = 1 - (altitudeFeet / 145366.45);
-   return hPa / (powf(temp, 1 / 0.190284));
+   temp = hPa / (powf(temp, 1.0 / 0.190284));
+   return temp;
 }
 
 /*** float NavDemo_ConvPresToAltM(float hPa)
@@ -361,7 +362,7 @@ float NavDemo_ConvTempCToTempF(float tempC) {
 **      This function performs the conversion from units of feet to meters
 */
 float NavDemo_ConvFeetToMeters(float feet) {
-   return feet / 0.3048;
+   return feet * 0.3048;
 }
 
 /*** float NavDemo_ConvMetersToFeet(float meters)
@@ -378,7 +379,7 @@ float NavDemo_ConvFeetToMeters(float feet) {
 **      This function performs the conversion from units of meters to feet
 */
 float NavDemo_ConvMetersToFeet(float meters) {
-   return meters * 0.3048;
+   return meters * 3.28084;
 }
 
 /*** float NavDemo_AngleInXY(NAV_RectCoord r)
